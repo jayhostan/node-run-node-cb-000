@@ -20,7 +20,7 @@ console.log('Hello World')
 
 This is a plain file with a `.js` extension, maybe `program.js`. How do you run it? Do you compile the code? Do you need an IDE (integrated development environment)? Where is the compiler? How long will it take to compile the program? Will it run on other platforms? If I compile it on Mac, will it work on Windows?
 
-Gladly, Node.js is an interpreted language. There's no compilation. There's no need for complex IDEs either (unless you like them). The `program.js` is a plain text file with a `.js` extension. To run this program, we go to terminal, *navigate to the folder with the script*, and run this command:
+Please don't panic! Gladly, Node.js is an interpreted language. There's no compilation. There's no need for complex IDEs either (unless you like them). The `program.js` is a plain text file with a `.js` extension. To run this program, we go to terminal, *navigate to the folder with the script*, and run this command:
 
 ```
 $ node program.js
@@ -34,9 +34,11 @@ If you are not in the same folder as your script file, you can navigate to it or
 $ node /Users/azat/Documents/Code/learn-co/program.js
 ```
 
+The result will be `Hello World`.
+
 ## Use the node help command to get the list of node CLI commands
 
-So what else can we do with the `node` command besides running our programs?
+So what else can we do with the `node` command besides running our programs? What if you an advanced Node developer and want to launch Node in different modes?
 
 As most command-line interfaces (CLIs), Node has the help command which will show you usage, list of commands and options. As of version 5.1.0, when you run `$ node -h`, you'll get these:
 
@@ -55,7 +57,7 @@ As most command-line interfaces (CLIs), Node has the help command which will sho
 * `--tls-cipher-list=val` use an alternative default TLS cipher list
 * `--icu-data-dir=dir`    set ICU data load path to dir (overrides NODE_ICU_DATA)
 
-We'll ignore the most of the options for now as they are for advanced developers. The `-v` print the version so we can use:
+We'll ignore the most of the options for now as they are for advanced developers. We just wanted to show you that they are there in case you want to poke around. Let's take a look at the first two to understand how to pass these options. The `-v` option prints the version, so we can use:
 
 ```
 $ node -v
@@ -73,9 +75,15 @@ What if we don't want to run a file or save code to a file? You can run the code
 $ node -e "console.log(new Date)"
 ```
 
-You might already guess the usage pattern. It looks like this: `$ node [options] [ -e script | script.js ] [arguments]`, where `[]` mean optional parameters. The potions can be one or a combination of options as listed by the help command, script a file or a string (`-e`) and the argument the data to pass to the script.
+You might already guess the usage pattern. It looks like this: 
 
-We can pass multiple argument separating them with spaces. For example, this code will print the third argument (index 2 because it's a 0-based array) back:
+```
+$ node [options] [ -e script | script.js ] [arguments]
+```
+
+Where square brackets `[]` mean optional parameters. The `[options]` can be a single option like `-v`, or a combination of options listed by the help command. `script.js` is a file with the code to execute. We can also run code from a string (`-e`). 
+
+And the argument is the data to pass to the script. We can pass multiple argument separating them with spaces. For example, this code will print the third argument (index 2 because it's a 0-based array) back:
 
 ```
 $ node -e "console.log(process.argv[2])" Azat "Pro Express.js"
