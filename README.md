@@ -12,10 +12,10 @@ In this lesson, you'll learn how to run Node scripts with and without parameters
 
 ## Describe how to execute a Node script from a terminal
 
-So let's say you already wrote a Node script (even if you haven't). It can be as simple as a Hello World, for example we can use `console` interface:
+So let's say you already wrote a Node script (even if you haven't). It can be as simple as a Hello World. For example we can use `console` interface:
 
 ```js
-console.log('Hello World')
+console.log('Hello World');
 ```
 
 This is a plain file with a `.js` extension, maybe `program.js`. How do you run it? Do you compile the code? Do you need an IDE (integrated development environment)? Where is the compiler? How long will it take to compile the program? Will it run on other platforms? If I compile it on Mac, will it work on Windows?
