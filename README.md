@@ -38,7 +38,7 @@ The result will be `Hello World`.
 
 ## Use the node help command to get the list of node CLI commands
 
-So what else can we do with the `node` command besides running our programs? What if you an advanced Node developer and want to launch Node in different modes?
+So what else can we do with the `node` command besides running our programs? What if you're an advanced Node developer and want to launch Node in different modes?
 
 As most command-line interfaces (CLIs), Node has the help command which will show you usage, list of commands and options. As of version 5.1.0, when you run `$ node -h`, you'll get these:
 
