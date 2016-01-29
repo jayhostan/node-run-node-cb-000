@@ -97,4 +97,4 @@ Pro Express.js
 
 ---
 
-<a href='https://learn.co/lessons/node-overview' data-visibility='hidden'>View this lesson on Learn.co</a>
+View <a href='https://learn.co/lessons/node-overview' data-visibility='hidden'>Launching Node</a> on Learn.co and start learning to code for free.
