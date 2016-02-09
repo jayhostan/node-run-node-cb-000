@@ -12,7 +12,7 @@ In this lesson, you'll learn how to run Node scripts with and without parameters
 
 ## Describe how to execute a Node script from a terminal
 
-So let's say you already wrote a Node script (even if you haven't). (A Node script is the same as a regular JavaScript file.) It can be as simple as a Hello World, for example we can use `console` interface:
+So let's say you already wrote a Node script (even if you haven't). (A Node script is the same as a regular Node file.) It can be as simple as a Hello World, for example we can use `console` interface:
 
 
 ```js
@@ -90,7 +90,6 @@ And the argument is the data to pass to the script. We can pass multiple argumen
 $ node -e "console.log(process.argv[2])" Azat "Pro Express.js"
 Pro Express.js
 ```
-
 
 
 ---
