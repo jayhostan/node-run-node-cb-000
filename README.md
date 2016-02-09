@@ -12,7 +12,8 @@ In this lesson, you'll learn how to run Node scripts with and without parameters
 
 ## Describe how to execute a Node script from a terminal
 
-So let's say you already wrote a Node script (even if you haven't). It can be as simple as a Hello World. For example we can use `console` interface:
+So let's say you already wrote a Node script (even if you haven't). (A Node script is the same as a regular JavaScript file.) It can be as simple as a Hello World, for example we can use `console` interface:
+
 
 ```js
 console.log('Hello World');
@@ -91,9 +92,6 @@ Pro Express.js
 ```
 
 
-## Resources
-
-1.  
 
 ---
 
