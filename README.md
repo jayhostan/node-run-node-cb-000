@@ -95,4 +95,4 @@ Pro Express.js
 ---
 
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/node-overview' title='Launching Node'>Launching Node</a> on Learn.co and start learning to code for free.</p>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/node-run-node' title='Launching Node'>Launching Node</a> on Learn.co and start learning to code for free.</p>
