@@ -12,27 +12,27 @@ In this lesson, you'll learn how to run Node scripts with and without parameters
 
 ## Describe how to execute a Node script from a terminal
 
-So let's say you already wrote a Node script (even if you haven't). (A Node script is the same as a regular Node file.) It can be as simple as a Hello World, for example we can use `console` interface:
+So let's say you already wrote a Node script (even if you haven't). (A Node script is the same as a regular Node file containing JavaScript.) It can be as simple as a Hello World, for example we can use `console` interface:
 
 
 ```js
 console.log('Hello World');
 ```
 
-This is a plain file with a `.js` extension, maybe `program.js`. How do you run it? Do you compile the code? Do you need an IDE (integrated development environment)? Where is the compiler? How long will it take to compile the program? Will it run on other platforms? If I compile it on Mac, will it work on Windows?
+This code would be contained in a plain file with a `.js` extension, maybe `program.js`. How do you run it? Do you compile the code? Do you need an IDE (integrated development environment)? Where is the compiler? How long will it take to compile the program? Will it run on other platforms? If I compile it on Mac, will it work on Windows?
 
 Please don't panic! Gladly, Node.js is an interpreted language. There's no compilation. There's no need for complex IDEs either (unless you like them). The `program.js` is a plain text file with a `.js` extension. To run this program, we go to terminal, *navigate to the folder with the script*, and run this command:
 
 ```
-$ node program.js
+node program.js
 ```
 
-Note: The `.js` extension in the command is optional, so `$ node program` will work as well.
+Note: The `.js` extension in the command is optional, so `node program` will work as well.
 
 If you are not in the same folder as your script file, you can navigate to it or specify path:
 
 ```js
-$ node /Users/azat/Documents/Code/learn-co/program.js
+node /Users/azat/Documents/Code/learn-co/program.js
 ```
 
 The result will be `Hello World`.
@@ -61,7 +61,7 @@ As most command-line interfaces (CLIs), Node has the help command which will sho
 We'll ignore the most of the options for now as they are for advanced developers. We just wanted to show you that they are there in case you want to poke around. Let's take a look at the first two to understand how to pass these options. The `-v` option prints the version, so we can use:
 
 ```
-$ node -v
+node -v
 ```
 
 To get the version of Node installed.
@@ -73,13 +73,13 @@ Obviously, the commands and options will evolve with the future versions. It's g
 What if we don't want to run a file or save code to a file? You can run the code from a command-line. Just wrap it in double quotes and paste after the `-e` option. For example the following terminal command will print the date:
 
 ```
-$ node -e "console.log(new Date)"
+node -e "console.log(new Date)"
 ```
 
 You might already guess the usage pattern. It looks like this:
 
 ```
-$ node [options] [ -e script | script.js ] [arguments]
+node [options] [ -e script | script.js ] [arguments]
 ```
 
 Where square brackets `[]` mean optional parameters. The `[options]` can be a single option like `-v`, or a combination of options listed by the help command. `script.js` is a file with the code to execute. We can also run code from a string (`-e`).
@@ -87,7 +87,7 @@ Where square brackets `[]` mean optional parameters. The `[options]` can be a si
 And the argument is the data to pass to the script. We can pass multiple argument separating them with spaces. For example, this code will print the third argument (index 2 because it's a 0-based array) back:
 
 ```
-$ node -e "console.log(process.argv[2])" Azat "Pro Express.js"
+node -e "console.log(process.argv[2])" Azat "Pro Express.js"
 Pro Express.js
 ```
 
