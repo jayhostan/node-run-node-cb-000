@@ -41,7 +41,7 @@ The result will be `Hello World`.
 
 So what else can we do with the `node` command besides running our programs? What if you're an advanced Node developer and want to launch Node in different modes?
 
-As most command-line interfaces (CLIs), Node has the help command which will show you usage, list of commands and options. As of version 5.1.0, when you run `$ node -h`, you'll get these:
+As most command-line interfaces (CLIs), Node has the help command which will show you usage, list of commands and options. As of version 5.1.0, when you run `node -h`, you'll get these:
 
 * `-v`, `--version`: print Node.js version
 * `-e`, `--eval script`: evaluate script
@@ -66,7 +66,7 @@ node -v
 
 To get the version of Node installed.
 
-Obviously, the commands and options will evolve with the future versions. It's good to know the current list by just typing `$ node --help`.
+Obviously, the commands and options will evolve with the future versions. It's good to know the current list by just typing `node --help`.
 
 ## Use node CLI command options and flags to launch node scripts in different modes
 
