@@ -48,7 +48,7 @@ As most command-line interfaces (CLIs), Node has the help command which will sho
 * `-p`, `--print`: evaluate script and print result
 * `-c`, `--check`: syntax check script without executing
 * `-i`, `--interactive`: always enter the REPL even if stdin does not appear to be a terminal
-* `-r`, `--require`:module to preload (option can be repeated)
+* `-r`, `--require`: module to preload (option can be repeated)
 * `--no-deprecation`      silence deprecation warnings
 * `--throw-deprecation`   throw an exception anytime a deprecated function is used
 * `--trace-deprecation`   show stack traces on deprecations
@@ -58,7 +58,7 @@ As most command-line interfaces (CLIs), Node has the help command which will sho
 * `--tls-cipher-list=val` use an alternative default TLS cipher list
 * `--icu-data-dir=dir`    set ICU data load path to dir (overrides NODE_ICU_DATA)
 
-We'll ignore the most of the options for now as they are for advanced developers. We just wanted to show you that they are there in case you want to poke around. Let's take a look at the first two to understand how to pass these options. The `-v` option prints the version, so we can use:
+We'll ignore most of the options for now as they are for advanced developers. We just wanted to show you that they are there in case you want to poke around. Let's take a look at the first two to understand how to pass these options. The `-v` option prints the version, so we can use:
 
 ```
 node -v
@@ -96,3 +96,5 @@ Pro Express.js
 
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/node-run-node' title='Launching Node'>Launching Node</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/node-run-node'>Launching Node</a> on Learn.co and start learning to code for free.</p>
